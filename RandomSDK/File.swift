@@ -17,7 +17,8 @@ public class RandomGenerator {
     
     public static func integer() -> Int {
         return Int(arc4random()) // something to do with this....
-        //we are tring
+        //we are tring....
+        //fghfh
     }
     
 }
