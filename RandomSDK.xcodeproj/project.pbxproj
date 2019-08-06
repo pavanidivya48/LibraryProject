@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		2A9A529D22F9AE9A00FC0799 /* RandomSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A9A529B22F9AE9A00FC0799 /* RandomSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2A9A52A422F9AEA700FC0799 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A52A322F9AEA700FC0799 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2A9A529822F9AE9A00FC0799 /* RandomSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RandomSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A9A529B22F9AE9A00FC0799 /* RandomSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RandomSDK.h; sourceTree = "<group>"; };
 		2A9A529C22F9AE9A00FC0799 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A9A52A322F9AEA700FC0799 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 			isa = PBXGroup;
 			children = (
 				2A9A529B22F9AE9A00FC0799 /* RandomSDK.h */,
+				2A9A52A322F9AEA700FC0799 /* File.swift */,
 				2A9A529C22F9AE9A00FC0799 /* Info.plist */,
 			);
 			path = RandomSDK;
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					2A9A529722F9AE9A00FC0799 = {
 						CreatedOnToolsVersion = 10.2.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -130,6 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A9A52A422F9AEA700FC0799 /* File.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +266,7 @@
 		2A9A52A122F9AE9A00FC0799 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -278,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.letsservice.RandomSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +293,7 @@
 		2A9A52A222F9AE9A00FC0799 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
